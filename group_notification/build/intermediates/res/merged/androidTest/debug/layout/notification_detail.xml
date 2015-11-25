@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef3f5"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#106bb9">
+
+                    <TextView
+                        android:id="@+id/textView_create_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="群通知查阅"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/back"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/left_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:scaleType="center"
+                            android:src="@drawable/tt_top_back" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView_create_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:id="@+id/button_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="刷新"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="发送人："
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textview_notifation_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/text"
+                        android:layout_toRightOf="@id/text"
+                        android:text="姓名"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textview_notifation_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="时间"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="标题："
+                        android:textColor="#313131"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textview_notifation_detail_lable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:hint="标题"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+                        android:textColor="#313131"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="内容："
+                        android:textColor="#313131"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textview_notifation_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="通知内容"
+                        android:minHeight="120dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#313131"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tx_huizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="选择回执信息:"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:background="@android:color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/rg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    >
+                    <RadioButton
+                        android:id="@+id/rgbtn_0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="收到   "
+                        android:textSize="17.0sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:button="@null"
+                        android:background="@drawable/radio"
+                        />
+                    <RadioButton
+                        android:id="@+id/rgbtn_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="知道了"
+                        android:textSize="17.0sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:background="@drawable/radio"
+                        />
+                    <RadioButton
+                        android:id="@+id/rgbtn_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="不同意"
+                        android:textSize="17.0sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:background="@drawable/radio"
+                        />
+                </RadioGroup>
+
+
+
+
+                <Button
+                    android:id="@+id/button_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="通知回执"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/state_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tx_statelist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="通知状态（下拉刷新）"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#eeeeee" />
+
+                    <com.code.bmj.myview.notificationListViewForScrollView
+                        android:id="@+id/notification_detail_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="10dp"
+                        android:divider="#00000000"
+                        android:dividerHeight="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout><!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/src/main/res/layout/notification_detail.xml --><!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/build/intermediates/bundles/debug/res/layout/notification_detail.xml -->

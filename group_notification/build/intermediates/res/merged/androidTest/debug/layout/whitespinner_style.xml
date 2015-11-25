@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:gravity="left"
+    android:layout_gravity="left"
+    android:textColor="#ffffff"
+    android:textSize="18sp"
+    android:singleLine="true"
+    android:drawableRight="@drawable/whitecrm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee" />
+<!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/database/src/main/res/layout/whitespinner_style.xml --><!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/build/intermediates/exploded-aar/YunXiaoShou/database/unspecified/res/layout/whitespinner_style.xml -->

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/id_msg_item_send"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="通知标题"
+        android:textColor="#a0a0a0"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/notification_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv2"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/tv2"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="标题"
+        android:textColor="#313131"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="通知内容"
+        android:textColor="#a0a0a0"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/notification_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv3"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/tv3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="通知内容"
+        android:textColor="#313131"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bmjnotification_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv3"
+        android:layout_marginTop="15dp"
+        android:text="时间"
+        android:textColor="#959595"
+        android:textSize="12sp" />
+
+</RelativeLayout><!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/src/main/res/layout/mysend_notification.xml --><!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/build/intermediates/bundles/debug/res/layout/mysend_notification.xml -->

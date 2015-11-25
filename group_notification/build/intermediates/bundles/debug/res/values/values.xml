@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <color name="weidu">#cc1e0c</color>
+    <color name="yidu">#cccc37</color>
+    <color name="yiqueren">#3fcc1d</color>
+    <!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/SpongeBob/Desktop/YunXiaoShou/group_notification/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <drawable name="diji"> #106bb9</drawable>
+    <drawable name="weidiji"> #01bad4</drawable>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+</resources>

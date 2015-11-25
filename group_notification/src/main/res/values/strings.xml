@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name = "weidu">#cc1e0c</color>
+    <color name="yidu">#cccc37</color>
+    <color name="yiqueren">#3fcc1d</color>
+    <drawable name="weidiji"> #01bad4</drawable>>
+    <drawable name="diji"> #106bb9</drawable>>
+</resources>

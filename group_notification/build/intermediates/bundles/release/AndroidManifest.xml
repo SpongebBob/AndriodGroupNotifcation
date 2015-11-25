@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.code.bmj.groupnotifycation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity android:name="com.code.bmj.groupnotifycation.GroupNotificationMainActivity" >
+        </activity>
+        <activity android:name="com.code.bmj.groupnotifycation.CreateNotificationActivity" >
+        </activity>
+        <activity android:name="com.code.bmj.groupnotifycation.GetFanweiActivity" >
+        </activity>
+        <activity android:name="com.code.bmj.groupnotifycation.NotificationDetailActivity" >
+        </activity>
+    </application>
+
+</manifest>
