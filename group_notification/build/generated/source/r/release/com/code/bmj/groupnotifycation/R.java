@@ -1532,7 +1532,7 @@ containing a value of this type.
         public static int abc_textfield_search_material=0x7f02003a;
         public static int add=0x7f02003b;
         public static int blackcrm=0x7f02003c;
-        public static int btn_bg=0x7f02003d;
+        public static int btn_bg_notification=0x7f02003d;
         public static int check34=0x7f02003e;
         public static int diji=0x7f020062;
         public static int dot_blue=0x7f02003f;

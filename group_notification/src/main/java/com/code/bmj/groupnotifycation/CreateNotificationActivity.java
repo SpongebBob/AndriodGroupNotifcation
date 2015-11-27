@@ -31,6 +31,7 @@ import de.tavendo.autobahn.WebSocketHandler;
 public class CreateNotificationActivity extends Activity {
     String choose_name = "";
     String choose_uid = "";
+    String choose_all_id ="";
     String send_title = "";
     String send_content = "";
     private RelativeLayout iv_back;
@@ -67,7 +68,8 @@ public class CreateNotificationActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                Bundle b = new Bundle();
+                if (!choose_uid.equals(""))
+                    intent.putExtra("alraedychoose",choose_all_id);
                 intent.setClass(CreateNotificationActivity.this, GetFanweiActivity.class);
                 startActivityForResult(intent, REQUSETOK);
             }
@@ -193,6 +195,7 @@ public class CreateNotificationActivity extends Activity {
         if (requestCode == CreateNotificationActivity.REQUSETOK && resultCode == RESULT_OK) {
             choose_name = data.getStringExtra("choose_name");
             choose_uid = data.getStringExtra("choose_id");
+            choose_all_id = data.getStringExtra("choose_allid");
             Log.d("test", "创建群通知name"+choose_name);
             Log.d("test", "创建群通知id"+choose_uid);
 

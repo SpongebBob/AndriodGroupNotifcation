@@ -17,6 +17,7 @@ public class GetFanweiActivity extends CommonContactActivity {
 
     private String getchoosename="";
     private String getchooseid="";
+    private String getchooseallid = "";
     @Override
     public String getData() {
        List<CommonContactNode> list =  mAdapter.getAllNode();
@@ -28,14 +29,20 @@ public class GetFanweiActivity extends CommonContactActivity {
                st =st+ ccb.getName() + ",";
                num = num + (ccb.getId()-10000)+ ",";
            }
+            //this
+            if(ccb.isChecked)
+             getchooseallid += ccb.getId() +",";
         }
         getchooseid = num;
         getchoosename =st;
         if(!st.equals(""))
         {
+            //this
+            getchooseallid =  getchooseallid.substring(0,getchooseallid.length()-1);
             getchooseid = getchooseid.substring(0,getchooseid.length()-1);
             getchoosename =getchoosename.substring(0,getchoosename.length()-1);
             Intent intent=new Intent();
+            intent.putExtra("choose_allid", getchooseallid.toString());
             intent.putExtra("choose_id", getchooseid.toString());
             intent.putExtra("choose_name", getchoosename.toString());
             setResult(RESULT_OK, intent);

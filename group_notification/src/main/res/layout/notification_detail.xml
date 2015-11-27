@@ -18,7 +18,7 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <RelativeLayout
@@ -199,15 +199,15 @@
                     android:id="@+id/rg"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="5dp"
                     >
                     <RadioButton
                         android:id="@+id/rgbtn_0"
-                        android:layout_width="fill_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="收到   "
+                        android:text="     收到   "
                         android:textSize="17.0sp"
                         android:textColor="@android:color/white"
                         android:gravity="center"
@@ -218,28 +218,28 @@
                         />
                     <RadioButton
                         android:id="@+id/rgbtn_1"
-                        android:layout_width="fill_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="知道了"
+                        android:text="     知道了"
                         android:textSize="17.0sp"
                         android:textColor="@android:color/white"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:button="@null"
                         android:background="@drawable/radio"
-                        />
+                        android:checked="false" />
                     <RadioButton
                         android:id="@+id/rgbtn_2"
-                        android:layout_width="fill_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="不同意"
+                        android:text="     不同意"
                         android:textSize="17.0sp"
                         android:textColor="@android:color/white"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:button="@null"
                         android:background="@drawable/radio"
-                        />
+                        android:checked="false" />
                 </RadioGroup>
 
 
@@ -253,7 +253,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="100dp"
-                    android:background="@drawable/btn_bg"
+                    android:background="@drawable/btn_bg_notification"
                     android:text="通知回执"
                     android:textColor="@android:color/white"
                     android:textSize="15sp" />
